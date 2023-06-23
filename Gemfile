@@ -46,6 +46,11 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 gem 'devise', '~> 4.9', '>= 4.9.2'
+gem "ruby-openai", "~> 4.0.0"
+
+# Simple, efficient background processing using Redis.
+# https://github.com/sidekiq/sidekiq
+gem "sidekiq", "~> 7.0.9"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -56,7 +61,11 @@ gem 'devise', '~> 4.9', '>= 4.9.2'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+
+  # A Ruby gem to load environment variables from `.env`.
+  gem 'dotenv-rails'
 end
+
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]

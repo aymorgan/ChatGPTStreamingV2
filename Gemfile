@@ -47,6 +47,7 @@ gem "bootsnap", require: false
 
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem "ruby-openai", "~> 4.0.0"
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Simple, efficient background processing using Redis.
 # https://github.com/sidekiq/sidekiq
